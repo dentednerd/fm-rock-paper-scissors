@@ -9,15 +9,18 @@ const StyledScore = styled('section', {
   color: '$scoreText',
   fontSize: '0.75rem',
   letterSpacing: '0.06125rem',
+  lineHeight: '1',
   display: 'flex',
   flexFlow: 'column nowrap',
   justifyContent: 'center',
   alignItems: 'center',
 
   span: {
-    fontSize: '1.75rem',
+    fontSize: '2.5rem',
+    lineHeight: '1',
+    height: '2.5rem',
     color: '$darkText',
-    fontWeight: 700
+    fontWeight: '$2'
   }
 });
 

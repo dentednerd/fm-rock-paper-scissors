@@ -3,6 +3,7 @@ import globalStyles from './styles/globalStyles';
 
 import Header from './organisms/Header';
 import Stage1 from './pages/Stage1';
+import Footer from './organisms/Footer';
 
 function App() {
   globalStyles();
@@ -12,6 +13,7 @@ function App() {
       <Header />
       {/* Router or state here?? */}
       <Stage1 />
+      <Footer />
     </main>
   );
 }

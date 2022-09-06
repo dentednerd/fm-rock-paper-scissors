@@ -4,9 +4,10 @@ import Choice from '../../atoms/Choice';
 
 const StyledStage1 = styled('section', {
   backgroundImage: `url(${Triangle})`,
-  backgroundPosition: '50% 25%',
+  backgroundPosition: 'center',
   backgroundAttachment: 'fixed',
   backgroundRepeat: 'no-repeat',
+  backgroundSize: '50%',
   width: '100%',
   height: '17.5rem',
   display: 'flex',
