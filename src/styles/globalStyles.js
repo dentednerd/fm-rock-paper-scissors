@@ -22,8 +22,12 @@ const globalStyles = globalCss({
 
   main: {
     maxWidth: '1366px',
+    height: '100vh',
     margin: '0 auto',
-    padding: '1rem'
+    padding: '1rem',
+    display: 'flex',
+    flexFlow: 'column nowrap',
+    justifyContent: 'space-between'
   }
 });
 

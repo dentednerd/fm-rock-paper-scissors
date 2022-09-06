@@ -33,6 +33,9 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
       bp1: '(min-width: 480px)'
     },
     utils: {
-      marginX: (value) => ({ marginLeft: value, marginRight: value })
+      bc: (value) => ({ borderColor: value }),
+      dropShadow: (value) => ({
+        boxShadow: `0 0.5rem 0 -0.25rem ${value}, inset 0 0.25rem #BAC0DD, 0 0 0.5rem black`
+      })
     }
   });
