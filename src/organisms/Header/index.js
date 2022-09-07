@@ -16,7 +16,7 @@ const StyledHeader = styled('header', {
     padding: '0 12px'
   },
 
-  '@media (min-width: 768px)': {
+  '@bp1': {
     width: '44rem',
     margin: '0 auto',
     padding: '1.5rem',

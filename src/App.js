@@ -1,11 +1,13 @@
-import './App.css';
+import { useState } from 'react';
 import globalStyles from './styles/globalStyles';
 
 import Header from './organisms/Header';
 import Stage1 from './pages/Stage1';
-import Footer from './organisms/Footer';
+import RulesButton from './atoms/RulesButton';
+import RulesModal from './templates/RulesModal';
 
 function App() {
+  const [show, setShow] = useState(false);
   globalStyles();
 
   return (
@@ -13,7 +15,8 @@ function App() {
       <Header />
       {/* Router or state here?? */}
       <Stage1 />
-      <Footer />
+      <RulesButton setShow={setShow} />
+      <RulesModal show={show} setShow={setShow} />
     </main>
   );
 }

@@ -17,7 +17,15 @@ const StyledChoice = styled('section', {
   flex: '0 1 9rem',
   height: '9rem',
   aspectRatio: '1 / 1',
-  color: '$darkText'
+  color: '$darkText',
+
+  '@bp1': {
+    height: '12.5rem',
+
+    img: {
+      transform: 'scale(1.5)' // can this be more responsive? svgs are vectors after all
+    }
+  }
 });
 
 export default function Choice({ choice }) {

@@ -19,7 +19,9 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
         headerOutline: 'hsl(217, 16%, 45%)',
         radialLight: 'hsl(214, 47%, 23%)',
         radialDark: 'hsl(237, 49%, 15%)',
-        white: 'hsl(255, 100%, 100%)'
+        white: 'hsl(255, 100%, 100%)',
+        black: 'hsl(255, 0%, 0%)',
+        choiceShadow: 'hsl(230, 34%, 80%)'
       },
       fonts: {
         Barlow: 'Barlow Semi Condensed'
@@ -30,12 +32,12 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
       }
     },
     media: {
-      bp1: '(min-width: 480px)'
+      bp1: '(min-width: 768px)'
     },
     utils: {
       bc: (value) => ({ borderColor: value }),
       dropShadow: (value) => ({
-        boxShadow: `0 0.5rem 0 -0.25rem ${value}, inset 0 0.25rem #BAC0DD, 0 0 0.5rem black`
+        boxShadow: `0 0.5rem 0 -0.25rem ${value}, inset 0 0.25rem $colors$choiceShadow, 0 0 0.5rem $colors$black`
       })
     }
   });

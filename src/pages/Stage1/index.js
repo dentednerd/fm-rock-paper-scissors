@@ -13,7 +13,7 @@ const StageGridContainer = styled('section', {
   gridTemplateColumns: 'repeat(2, 50%)',
   gridTemplateRows: 'repeat(2, 50%)',
 
-  '@media (min-width: 768px)': {
+  '@bp1': {
     height: '27rem',
     width: '30rem',
     margin: '0 auto'

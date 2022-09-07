@@ -27,7 +27,11 @@ const globalStyles = globalCss({
     padding: '1rem',
     display: 'flex',
     flexFlow: 'column nowrap',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+
+    '@bp1': {
+      justifyContent: 'flex-start'
+    }
   }
 });
 

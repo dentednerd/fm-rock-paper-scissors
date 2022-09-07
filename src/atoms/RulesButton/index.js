@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { styled } from '../../stitches.config';
 
 const StyledRulesButton = styled('button', {
@@ -8,14 +9,19 @@ const StyledRulesButton = styled('button', {
   borderRadius: '0.5rem',
   width: '8.25rem',
   padding: '0.5rem',
+  margin: '0 auto',
 
-  '@media (min-width:768px)': {
+  '@bp1': {
     position: 'absolute',
     bottom: '2rem',
     right: '2rem'
   }
 });
 
-export default function RulesButton() {
-  return <StyledRulesButton>Rules</StyledRulesButton>;
+export default function RulesButton({ setShow }) {
+  return <StyledRulesButton onClick={() => setShow(true)}>Rules</StyledRulesButton>;
 }
+
+RulesButton.propTypes = {
+  setShow: PropTypes.func.isRequired
+};

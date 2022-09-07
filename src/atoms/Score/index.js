@@ -23,7 +23,7 @@ const StyledScore = styled('section', {
     fontWeight: '$2'
   },
 
-  '@media (min-width: 768px)': {
+  '@bp1': {
     height: '5.75rem',
 
     span: {
