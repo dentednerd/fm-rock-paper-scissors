@@ -15,9 +15,9 @@ const StyledChoice = styled('section', {
   justifyContent: 'center',
   alignItems: 'center',
   flex: '0 1 9rem',
+  height: '9rem',
   aspectRatio: '1 / 1',
-  color: '$darkText',
-  margin: '0 auto'
+  color: '$darkText'
 });
 
 export default function Choice({ choice }) {

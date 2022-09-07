@@ -3,8 +3,8 @@ import { styled } from '../../stitches.config';
 const StyledScore = styled('section', {
   backgroundColor: '$white',
   borderRadius: '0.25rem',
+  aspectRatio: '10 / 9',
   height: '4.5rem',
-  width: '5rem',
   textTransform: 'uppercase',
   color: '$scoreText',
   fontSize: '0.75rem',
@@ -21,6 +21,14 @@ const StyledScore = styled('section', {
     height: '2.5rem',
     color: '$darkText',
     fontWeight: '$2'
+  },
+
+  '@media (min-width: 768px)': {
+    height: '5.75rem',
+
+    span: {
+      fontSize: '2.75rem'
+    }
   }
 });
 

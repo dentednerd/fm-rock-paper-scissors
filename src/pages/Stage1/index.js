@@ -2,26 +2,42 @@ import { styled } from '../../stitches.config';
 import Triangle from '../../assets/bg-triangle.svg';
 import Choice from '../../atoms/Choice';
 
-const StyledStage1 = styled('section', {
+const StageGridContainer = styled('section', {
   backgroundImage: `url(${Triangle})`,
-  backgroundPosition: 'center',
-  backgroundAttachment: 'fixed',
+  backgroundPosition: 'center center',
   backgroundRepeat: 'no-repeat',
-  backgroundSize: '50%',
+  backgroundSize: '16rem',
+  height: '20rem',
   width: '100%',
-  height: '17.5rem',
+  display: 'grid',
+  gridTemplateColumns: 'repeat(2, 50%)',
+  gridTemplateRows: 'repeat(2, 50%)',
+
+  '@media (min-width: 768px)': {
+    height: '27rem',
+    width: '30rem',
+    margin: '0 auto'
+  }
+});
+
+const StageGridItem = styled('section', {
   display: 'flex',
-  flexWrap: 'wrap',
-  justifyContent: 'space-between',
-  textAlign: 'center'
+  justifyContent: 'center',
+  alignItems: 'center'
 });
 
 export default function Stage1() {
   return (
-    <StyledStage1>
-      <Choice choice="paper" />
-      <Choice choice="scissors" />
-      <Choice choice="rock" />
-    </StyledStage1>
+    <StageGridContainer>
+      <StageGridItem>
+        <Choice choice="paper" />
+      </StageGridItem>
+      <StageGridItem>
+        <Choice choice="scissors" />
+      </StageGridItem>
+      <StageGridItem style={{ gridColumn: '1 / 3' }}>
+        <Choice choice="rock" />
+      </StageGridItem>
+    </StageGridContainer>
   );
 }

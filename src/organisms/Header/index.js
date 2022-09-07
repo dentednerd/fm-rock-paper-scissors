@@ -14,6 +14,16 @@ const StyledHeader = styled('header', {
   img: {
     height: '3rem',
     padding: '0 12px'
+  },
+
+  '@media (min-width: 768px)': {
+    width: '44rem',
+    margin: '0 auto',
+    padding: '1.5rem',
+
+    img: {
+      height: '5.75rem'
+    }
   }
 });
 
